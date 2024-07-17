@@ -5,12 +5,16 @@ import cabin from "../../assets/cabin.svg";
 
 const Login = () => {
   return (
-    <Grid gridTemplateColumns="1.2fr 1fr" h="100vh">
+    <Grid gridTemplateColumns={{ base: "1fr", lg: "1.3fr 1fr " }} h="100vh">
       <Box>
         <Image src={login} h="100%" objectFit="cover" />
       </Box>
-      <Grid placeContent="start center" padding="5rem">
-        <Flex flexDirection="column" gap="5px" w="28rem">
+      <Grid placeContent="start center" padding={{ base: "2rem", lg: "5rem" }}>
+        <Flex
+          flexDirection="column"
+          gap="5px"
+          w={{ base: "40rem", lg: "28rem" }}
+        >
           <Image src={cabin} h="3.75rem" w="2.5rem" />
           <Heading fontSize="2.5rem" marginTop="10px">
             Welcome Back!
