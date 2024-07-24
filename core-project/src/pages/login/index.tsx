@@ -1,4 +1,4 @@
-import { Grid, Box, Image, Heading, Text, Flex, Icon } from "@chakra-ui/react";
+import { Grid, Box, Image, Heading, Text, Flex } from "@chakra-ui/react";
 import { LoginForm } from "./Form";
 import login from "../../assets/login.svg";
 import cabin from "../../assets/cabin.svg";

@@ -8,6 +8,14 @@ const config: ThemeConfig = {
 const theme = extendTheme({
   config,
   colors: {
+    text: {
+      title: "#FFFFFF",
+      subtitle: "#AAB5D0",
+      default: "#E4EBFB"
+    },
+    background: {
+      50: "#121E31",
+    },
     brand: {
       50: "#e5e4ff",
       100: "#c4c3ff",

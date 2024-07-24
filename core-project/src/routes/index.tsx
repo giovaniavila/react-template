@@ -1,9 +1,18 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "../pages/login";
+import Home from "../pages/home";
+import SomePage from "../pages/somepage";
 
-const index = () => {
+const MainRoutes = () => {
   return (
-    <div>index</div>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/somepage" element={<SomePage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default index
+export default MainRoutes;
