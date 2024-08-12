@@ -35,7 +35,7 @@ export function LoginForm() {
             <Checkbox defaultChecked colorScheme="green" size="sm">
               Do you want to save the password?
             </Checkbox>
-            <Link fontWeight="600" color="brand.500" fontSize="0.8125rem">
+            <Link fontWeight="600" color="purple.500" fontSize="0.8125rem">
               Forgot the password?
             </Link>
           </Flex>

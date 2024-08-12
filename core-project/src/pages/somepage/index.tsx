@@ -3,7 +3,7 @@ import Sidebar from "../../components/sidebar";
 
 const SomePage = () => {
   return (
-    <Grid gridTemplateColumns=".2fr 1fr" h="100vh">
+    <Grid gridTemplateColumns=".15fr 1fr" h="100vh">
       <Sidebar />
       <Box>Conteúdo restante some page</Box>
     </Grid>
