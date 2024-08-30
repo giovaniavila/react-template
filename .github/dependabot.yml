@@ -1,0 +1,13 @@
+# dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "npm" # Use "npm" para projetos com pnpm
+    directory: "/" # Localização do arquivo pnpm-lock.yaml, geralmente na raiz
+    schedule:
+      interval: "weekly" # Frequência das atualizações: daily, weekly, monthly
+    open-pull-requests-limit: 5 # Limite de pull requests abertos simultaneamente
+    rebase-strategy: "auto" # Estratégia de rebase (auto, always, disabled)
+    labels:
+      - "dependencies" # Rótulo para os pull requests criados
+    ignore:
+      - dependency-name: "some-package" # Exemplo de como ignorar pacotes específicos, se necessário
