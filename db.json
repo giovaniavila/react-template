@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Macbook Mini",
+      "description": "best Macbook Mini in the market",
+      "price": "1299"
+    },
+    {
+      "id": 2,
+      "name": "Iphone 14",
+      "description": "best Iphone 14 in the market",
+      "price": "800"
+    }
+  ]
+}
