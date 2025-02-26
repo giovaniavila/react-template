@@ -3,5 +3,13 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx", // Suporte a JSX
+    "module": "commonjs", // Usado pelo Jest
+    "target": "es6", // Define o target do JavaScript
+    "esModuleInterop": true, // Permite importações de módulos CommonJS
+    "skipLibCheck": true, // Ignora a verificação de tipos em bibliotecas
+    "types": ["jest", "node"] // Adiciona tipos do Jest
+  }
 }

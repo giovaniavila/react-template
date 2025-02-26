@@ -3,13 +3,14 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { AppRoutes } from "./routes/routes";
 import { BrowserRouter } from "react-router-dom";
+import theme from "./styles/theme";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <BrowserRouter>
           <AppRoutes />
         </BrowserRouter>
