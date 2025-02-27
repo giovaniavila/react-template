@@ -1,15 +1,16 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/" 
+    directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 5 
+    open-pull-requests-limit: 5
     rebase-strategy: "auto"
     labels:
-      - "dependencies" 
+      - "dependencies"
     ignore:
-      - dependency-name: "some-package" 
+      - dependency-name: "some-package"
+
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -18,10 +19,12 @@ updates:
     rebase-strategy: "auto"
     labels:
       - "dev-dependencies"
-      
-    target-branch: "main" 
+    ignore:
+      - dependency-name: "some-dev-package"
+    target-branch: "main"
 
   - package-ecosystem: "npm"
+    directory: "/subfolder"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
